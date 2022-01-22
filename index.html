@@ -60,6 +60,12 @@
         font-family: Arial, Helvetica, sans-serif;
         text-align: center;
       }
+      .btn_div button {
+        color: white;
+        background: rgba(229, 155, 5, 1);
+        animation: glow 1s ease-in-out infinite alternate;
+      }
+
       /*   .quotes_div {
         font-size: 70px;
         font-style: normal;
@@ -67,7 +73,7 @@
         line-height: 88px;
         letter-spacing: 0em;
         animation: glow 1s ease-in-out infinite alternate;
-      } */ /*
+      } */
 
       @keyframes glow {
         from {
@@ -82,9 +88,9 @@
             0 0 80px #ff4da6;
         }
       }
-
+      /* 
       .btn {
-        animation: glow 1s ease-in-out infinite alternate;
+     
         padding: 1em 1.4em;
         font-weight: 800;
         color: white;
@@ -93,7 +99,8 @@
         background: #e59b05;
         border-radius: 5px;
         font-size: 1vw;
-      }
+      } */
+
       /* home css */
 
       /* slider css */
@@ -180,10 +187,17 @@
 
       /* responsive css */
 
-      @media screen and (max-width: 400px) {
+      @media screen and (max-width: 401px) {
+        .nav-item a {
+          font-size: 10vw !important;
+          color: white;
+        }
         .navbar-toggler {
           background-color: rgb(255, 255, 255);
           outline: none !important;
+        }
+        .navbar-toggler:focus {
+          background: turquoise;
         }
         .navbar {
           background-color: black;
@@ -209,7 +223,7 @@
         .img {
           position: absolute;
           left: 16% !important;
-          top: 50%;
+          top: 40%;
           height: 70vh;
           width: 50vw;
           z-index: -1;
@@ -244,6 +258,8 @@
         .btn_div button {
           padding: 1rem 1rem;
           border-radius: 0.5rem;
+          font-size: 5vw;
+          font-weight: 800;
         }
         .carousel-inner {
           width: 300;
@@ -262,6 +278,7 @@
           transform: scale(0.8);
           transform: rotate(-5deg);
         }
+
         .slider_btn {
           display: flex;
           justify-content: stretch;
@@ -293,18 +310,18 @@
           position: relative;
           padding: 2rem;
           color: white;
-          height: 80vh;
+          height: 50vh;
           width: 90vw;
-          justify-content: center;
         }
         .products_main {
           text-align: start;
-          margin-top: 2rem;
+          bottom: 0;
+          margin-top: 6rem;
         }
         .products_main h1 {
           line-height: 2.3rem;
           font-size: 12vw;
-          width: 55vw;
+          width: 60vw;
           font-weight: 900;
         }
         .products_main p {
@@ -314,19 +331,19 @@
           width: 70vw;
         }
         .img1 img {
-          width: 70%;
+          width: 45%;
           height: auto !important;
           height: 30vh !important;
           position: absolute;
-          left: 9%;
-          top: -19%;
+          left: 59%;
+          top: -21%;
         }
         .img2 img {
           width: 70%;
           height: auto !important;
           position: absolute;
-          top: -19%;
-          left: 5%;
+          top: -16%;
+          left: -5%;
           height: 30vh;
         }
       }
@@ -334,6 +351,13 @@
       /*  mobile large */
 
       @media (min-width: 576px) and (max-width: 768px) {
+        body {
+          width: max-content;
+        }
+        .nav-item a {
+          font-size: 10vw !important;
+          color: white;
+        }
         .navbar-toggler {
           background-color: rgb(255, 255, 255);
         }
@@ -341,7 +365,7 @@
           color: black;
         }
         .navbar {
-          background-color: chocolate;
+          background-color: black;
           z-index: 1000;
         }
         .img {
@@ -356,6 +380,9 @@
           background-repeat: no-repeat;
           background-size: 100%;
           transform: rotate(10deg);
+        }
+        .text_wraping {
+          margin-top: -5rem;
         }
         .quotes_div h1 {
           margin-bottom: 3rem;
@@ -396,10 +423,7 @@
           width: 90vw;
           margin-bottom: 5rem;
         }
-        .products_main2 {
-          position: relative;
-          float: right !important;
-        }
+
         .img1 img {
           width: 50%;
           height: auto !important;
@@ -417,14 +441,27 @@
           top: -10%;
         }
         .products_main2 {
-          position: absolute !important;
-
-          left: 45%;
           width: 100%;
+        }
+        .products_main2 h1 {
+          position: relative !important;
+          left: 45%;
+        }
+        .products_main2 p {
+          position: relative !important;
+          left: 45%;
+        }
+        .products_main2 span {
+          position: relative !important;
+          left: 45%;
+        }
+        .products_main1 {
+          margin-left: -1rem;
+          margin-bottom: 1rem;
         }
         .products_main h1 {
           font-size: 7vw;
-          width: 58%;
+          width: 54%;
           font-weight: 1200;
           line-height: 3rem;
           word-wrap: break-word;
@@ -645,7 +682,7 @@
           position: relative;
           padding: 2rem;
           color: white;
-          height: 100vh;
+          height: 55vh;
           width: 90vw;
           justify-content: center;
         }
@@ -745,6 +782,14 @@
           font-size: 3vw !important;
           margin-bottom: 1.5rem;
         }
+        .btn_div button {
+          color: white;
+          font-size: 1.5vw;
+          margin-top: 4rem;
+          padding: 1rem 2rem;
+          background: rgba(229, 155, 5, 1);
+          border-radius: 0.5rem;
+        }
         .feature_text h1 {
           font-size: 3vw !important;
         }
@@ -821,6 +866,13 @@
         .products_main span {
           font-size: 3.5vw;
           font-weight: 700;
+        }
+        .middle_products {
+          transition: 0.3s;
+        }
+        .middle_products:hover {
+          transform: scale(1.5);
+          margin-bottom: -11rem;
         }
       }
     </style>
@@ -913,9 +965,36 @@
                 />
               </div>
 
-              <div class="col-sm-4 col-10">
+              <div class="col-sm-4 col-10 middle_products">
                 <img
                   src="img/shoe-5 1.png"
+                  class="d-block w-100 img-fluid"
+                  alt="..."
+                />
+              </div>
+              <div class="col-sm-4 d-none d-sm-block">
+                <img
+                  src="img/shoe-4 1.png"
+                  class="d-block w-100 img-fluid"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-sm-4 d-none d-sm-block">
+                <img
+                  src="img/shoe-5 1.png"
+                  class="d-block w-100 img-fluid"
+                  alt="..."
+                />
+              </div>
+
+              <div class="col-sm-4 col-10 middle_products">
+                <img
+                  src="img/shoe-6 1.png"
                   class="d-block w-100 img-fluid"
                   alt="..."
                 />
@@ -940,43 +1019,16 @@
                 />
               </div>
 
-              <div class="col-sm-4 col-10">
-                <img
-                  src="img/shoe-5 1.png"
-                  class="d-block w-100 img-fluid"
-                  alt="..."
-                />
-              </div>
-              <div class="col-sm-4 d-none d-sm-block">
+              <div class="col-sm-4 col-10 middle_products">
                 <img
                   src="img/shoe-4 1.png"
                   class="d-block w-100 img-fluid"
                   alt="..."
                 />
               </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="row">
               <div class="col-sm-4 d-none d-sm-block">
-                <img
-                  src="img/shoe-6 1.png"
-                  class="d-block w-100 img-fluid"
-                  alt="..."
-                />
-              </div>
-
-              <div class="col-sm-4 col-10">
                 <img
                   src="img/shoe-5 1.png"
-                  class="d-block w-100 img-fluid"
-                  alt="..."
-                />
-              </div>
-              <div class="col-sm-4 d-none d-sm-block">
-                <img
-                  src="img/shoe-4 1.png"
                   class="d-block w-100 img-fluid"
                   alt="..."
                 />
@@ -1012,7 +1064,7 @@
       <h1 class="pro_tag text-center mb-5 mt-5">our products</h1>
 
       <div class="pro_comp">
-        <div class="container products_main">
+        <div class="container products_main products_main1">
           <h1>A Really Nice Shoe</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
